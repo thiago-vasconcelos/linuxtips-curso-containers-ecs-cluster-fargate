@@ -15,6 +15,16 @@ output "lb_listener_ssm_arn" {
 }
 
 output "cloudmap_ssm" {
-  description = "Id do namespace de service discovery do cluster"
+  description = "Id do namespace de Service Discovery do cluster"
   value       = aws_ssm_parameter.cloudmap.id
+}
+
+output "service_connect_ssm" {
+  description = "Id do namespace de Service Connect do cluster"
+  value       = aws_ssm_parameter.service_connect.id
+}
+
+output "service_connect_name_ssm" {
+  description = "Nome do Service Connect do cluster"
+  value       = aws_ssm_parameter.service_connect_name.id
 }
